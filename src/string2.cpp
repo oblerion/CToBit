@@ -34,4 +34,3 @@ int string_find_list(string s,vector<string> list,int n)
 	return -1;
 	
 }
- 

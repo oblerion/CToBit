@@ -41,13 +41,14 @@ struct i_function
 {
 	string name;
 	string return_type;
-	vector<struct i_variable> lvar;
-	vector<vector<string>> linst;
+	vector<string> lparameter;
+	vector<string> linst;
 };
 struct i_struct
 {
 	string name;
-	vector<struct i_variable> lvar;
+	//vector<struct i_variable> lvar;
+	vector<string> linst;
 };
 
 struct i_program
@@ -58,7 +59,11 @@ struct i_program
 	vector<struct i_struct> lstruct; 
 };
 
-struct i_program Analyse(string file);
+struct i_program Analyse_init(string file);
 void synth_check(vector<string> pars,vector<vector<string>> init,struct i_program* sprog);
 void draw_program(struct i_program sprog);
+int vector_search(vector<string> data,string f,int n);
+int recettes_check(vector<string> pars,vector<vector<string>> initial, int n);
+vector<string> get_all_btw(vector<string> data,string s_begin,string s_end,int n_begin,int* n_end);
+
 #endif
