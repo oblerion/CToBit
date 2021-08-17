@@ -7,3 +7,6 @@ convert c source to bitcode, use /test/main.c analyse it
 - parser.cpp -> parsing function.
 - inter.cpp -> pre analyse. 
 - inter2.cpp -> full analyse.
+## feature
+- parser : main.c to vector<string>
+- inter : vector<string> to struct i_program
