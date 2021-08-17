@@ -6,11 +6,8 @@ EXEC=main
 #window:CC=g++
 #window:CFLAGS=-Wall -lgdi32 -lm
 #-mwindows
-#window:INC=-I /include 
 #window:EXEC=main.exe
-
-#window:$(EXEC) *.o
-#	$(CC) *.o $(CFLAGS) -o $(EXEC) 
+ 
 $(EXEC): io.o parser.o string2.o main.o inter.o
 	$(CC) io.o parser.o string2.o main.o inter.o $(CFLAGS) -o $(EXEC)
 io.o:src/io.cpp
@@ -27,5 +24,8 @@ main.o:src/main.cpp
 #	$(CC) -c src/*.cpp
 clean: 
 	rm *.o 
+
+	
+
 
 	
