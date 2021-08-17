@@ -5,4 +5,5 @@ convert c source to bitcode, use /test/main.c analyse it
 - io.cpp -> write and read file.
 - string2.cpp -> some string modify function.
 - parser.cpp -> parsing function.
-- inter.cpp -> analyse, synthaxe check. 
+- inter.cpp -> pre analyse. 
+- inter2.cpp -> full analyse.
