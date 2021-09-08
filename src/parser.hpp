@@ -17,5 +17,4 @@ const vector<string> token = {
 	"for","while","do","return"
 };
 vector<string> Parser(string reading);
-vector<string> Parser2(vector<string> pars);
 #endif
